@@ -8,7 +8,20 @@ void hipotenusa(int& op) {
 	float h = sqrt((cat1 * cat1) + (cat2 * cat2));
 	printf("\nO valor da Hipotenusa e: %.2f\n", h);
 	system("pause");
+	printf("\nDeseja voltar para o menu? (s/n)");
+	scanf("%s",&voltar);
+	if (voltar == 's') {
+		system('cls');
+		menu(op);
+	}
+	else	{
+		system('cls');
+		printf("Deseja refazer a operaçăo? (s/n)");
+		scanf("%s",&voltar);
+		if (voltar == 's') {
+			bhaskara(op);
+		}
+		else		{
+		system('exit');
+		}	}}
 }
-
-
-#endif // HIPOTENUSA_H_INCLUDED
