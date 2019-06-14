@@ -27,7 +27,23 @@ void perimetro(int& op) {
         int p =lado*valorLado;
         printf("\n\nO perimetro da figura indicada e de: %d\n\n",p);
     }
-}
-}
+}system("pause");
+	printf("\nDeseja voltar para o menu? (s/n)");
+	scanf("%s",&voltar);
+	if (voltar == 's') {
+		system('cls');
+		menu(op);
+	}
+	else	{
+		system('cls');
+		printf("Deseja refazer a operaçăo? (s/n)");
+		scanf("%s",&voltar);
+		if (voltar == 's') {
+			bhaskara(op);
+		}
+		else		{
+		system('exit');
+		}	}}
+
 
 #endif // PERIMETRO_H_INCLUDED
